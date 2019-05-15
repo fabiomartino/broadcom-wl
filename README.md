@@ -2,13 +2,20 @@
 
 Set of patch for Broadcom wireless adapters
 
-**Patched for Linux >= 4.15**
+**Patched for Linux >= 4.15 and 5.1.2**
 
-Tested on Debian Stretch with Kernel 4.15.2
+Tested on Debian Stretch with Kernel 4.15.2 and 5.1.2
 
 ```bash
 $ uname -r
 4.15.2
+```
+
+or
+
+```bash
+$ uname -r
+5.1.2
 ```
 
 With a Azureware __BCM94360HMB__ 802.11abgn/11ac WLAN + BT PCI-E Mini Card
@@ -39,6 +46,11 @@ $ tar xzf hybrid-v35_64-nodebug-pcoem-6_30_223_271.tar.gz
 
 ```bash
 $ patch -p1 < linux-415.patch
+```
+or 
+
+```bash
+$ patch -p1 < linux-512.patch
 ```
 
 * ### Build and Install
